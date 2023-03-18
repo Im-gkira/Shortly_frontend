@@ -1,0 +1,148 @@
+.nav{
+    background-color: #ffffff;
+
+}
+
+.nav>nav{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.nav--left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.nav--right{
+    display: flex;
+    gap: 1em;
+}
+
+
+.home{
+    background-color: #ffffff;
+    margin-top: 3em;
+}
+
+.home--grid{
+    margin-left: 10%;
+    display: grid;
+    grid-template: "a b" 70vh/ 1fr 1fr;
+    gap: 10em;
+}
+
+
+.home--grid>img{
+    grid-area: b;
+    align-self: center;
+    justify-self: end;
+    max-width: 100vw;
+    max-height: 95%;
+}
+
+.home--grid>div{
+    grid-area: a;
+    align-self: center;
+}
+
+.home--grid>div>h1{
+    font-size: 4em;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2em;
+}
+
+.home--grid>div>h3{
+    font-size: 1.2em;
+    color: #9c9ba1;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+.hero--search{
+    width: 80%;
+    display: flex;
+    background: url(images/bg-boost-desktop.svg);
+    background-color: #3a3053;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+    padding: 3em;
+    border-radius: 0.5em;
+}
+
+.hero--search>input{
+    width: 80%;
+    border-radius: 0.5em;
+    color: #db6b76;
+    font-size: 1.3em;
+    padding: 0.7em;
+}
+
+.hero--search>input:focus{
+    outline: 2px solid #db6b76;
+    color:black
+}
+
+.hero--search>button{
+    width: 20%;
+    font-size: 1.3em;
+    padding: 0.7em;
+    border-radius: 0.5em;
+}
+
+.hero--result{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero--response{
+    width: 100%;
+    display: grid;
+    grid-template: "a a c" 2em/ 1.7fr 1fr 0.3fr;
+    gap: 0.8em;
+    font-weight: 100;
+    margin: 0;
+    padding: 1em;
+    background-color: aliceblue;
+    border-radius: 0.4em;
+}
+
+.old--url{
+    font-size: 1em;
+    font-weight: 400;
+    align-self: center;
+    overflow: hidden;
+    color: #9c9ba1;
+    display: block;
+    white-space: nowrap
+}
+
+
+.new--url{
+    font-size: 1em;
+    font-weight: 500;
+    align-self: center;
+    color: #2bd1d1;
+    justify-self: end;
+}

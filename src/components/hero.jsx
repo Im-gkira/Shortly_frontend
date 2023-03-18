@@ -18,7 +18,7 @@ export default function Hero() {
     function () {
       if (reqUrl) {
         axios
-          .post("http://localhost:5000/minrl/get_mini_url", {
+          .post("https://minirl.onrender.com/minrl/get_mini_url", {
             original_url: reqUrl,
           })
           .then(function (response) {
@@ -36,12 +36,22 @@ export default function Hero() {
     [reqUrl]
   );
 
+  function copyText(url) {
+    var text = url;
+    var textarea = document.createElement("textarea");
+    textarea.value = text;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textarea);
+  }
+
   var dataArr = outputArr.map(function (data, index) {
     return (
-      <div key={index}>
-        <h2>{data[0]}</h2>
-        <h2>{data[1]}</h2>
-        <button>Go</button>
+      <div key={index} className="hero--response">
+        <h2 className="old--url">{data[0]}</h2>
+        <h2 className="new--url">{data[1]}</h2>
+        <button className="go--btn" onClick={()=>{copyText(data[1])}}>Copy</button>
       </div>
     );
   });
@@ -49,8 +59,8 @@ export default function Hero() {
   console.log(outputArr);
 
   return (
-    <div>
-      <div>
+    <section className="hero">
+      <div className="hero--search">
         <input
           placeholder="Shorten a link here..."
           value={userInput}
@@ -58,8 +68,7 @@ export default function Hero() {
         />
         <button onClick={clickHandler}>Shorten It!</button>
       </div>
-      <hr></hr>
-      <div>{dataArr}</div>
-    </div>
+      <div className="hero--result">{dataArr}</div>
+    </section>
   );
 }
