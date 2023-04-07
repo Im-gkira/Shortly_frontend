@@ -11,8 +11,8 @@ export default function Navbar() {
           <h4>Resources</h4>
         </div>
         <div className="nav--right">
-          <button>Login</button>
-          <button>Sign Up</button>
+          <button className="login--btn">Login</button>
+          <button className="register--btn">Sign Up</button>
         </div>
       </nav>
     </section>

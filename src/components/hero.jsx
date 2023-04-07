@@ -60,7 +60,7 @@ export default function Hero() {
 
   return (
     <section className="hero">
-      <div className="hero--search">
+      <div id="search" className="hero--search">
         <input
           placeholder="Shorten a link here..."
           value={userInput}

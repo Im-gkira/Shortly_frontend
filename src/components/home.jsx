@@ -10,7 +10,7 @@ export default function Home() {
             Build your brand’s recognition and get detailed insights on how your
             links are performing.
           </h3>
-          <button>Get Started</button>
+          <a href="#search">Get Started</a>
         </div>
         <img src="images/illustration-working.svg"/>
       </div>

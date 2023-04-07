@@ -1,4 +1,5 @@
 .nav{
+    padding-top: 2rem;
     background-color: #ffffff;
 
 }
@@ -20,9 +21,42 @@
     gap: 2em;
 }
 
+.nav--left>h4{
+    color: #8f8e95;
+}
+
 .nav--right{
     display: flex;
     gap: 1em;
+}
+
+.nav--right>button,.home--grid>div>a{
+    padding: 0.6rem 1rem;
+    border-radius: 1rem;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.home--grid>div>a{
+    position: absolute;
+    text-decoration: none;
+    background-color: #29d2d0;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+.register--btn{
+    background-color: #29d2d0;
+    color: white;
+}
+
+.login--btn{
+    background-color: white;
+    color: #8f8e95;
 }
 
 
@@ -73,6 +107,7 @@
     align-items: center;
     justify-content: center;
     gap: 2em;
+    margin-top: 4rem;
 }
 
 .hero--search{
@@ -105,6 +140,9 @@
     font-size: 1.3em;
     padding: 0.7em;
     border-radius: 0.5em;
+    background-color: #29d2d0;
+    color: white;
+    font-weight: 600;
 }
 
 .hero--result{
@@ -145,4 +183,8 @@
     align-self: center;
     color: #2bd1d1;
     justify-self: end;
+}
+
+.footer{
+    background-color: #232027;
 }

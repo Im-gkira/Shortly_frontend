@@ -2,7 +2,7 @@ import React from "react";
 import Card from "./card";
 export default function Statistic() {
   return (
-    <section>
+    <section className="statistics">
       <Card
         img=""
         title="Advanced Statistics"
